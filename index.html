@@ -6,7 +6,16 @@
 </head>
 <body>
 <iframe src="https://endorphone.com.ua/conf_drop/?drop=24653" width="800" height="800" scrolling="no" frameborder="0"></iframe>
+<iframe src="https://endorphone.com.ua/personalcase/drop-new2-vk.php?drop=24653" width="750" height="750" scrolling="no" frameborder="0" style="display:block; margin:0 auto;" id="personal-case-frame"></iframe>
 </body>
+<script>
+	var window_W = document.documentElement.clientWidth;
+	var window_H = window.innerHeight;
+	if(window_W < 950){
+		document.getElementById("personal-case-frame").style.width = window_W - 15 + "px";
+	}
+	document.getElementById("personal-case-frame").style.height = "950px";
+</script>
 <script>
 	var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 	var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
